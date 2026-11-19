@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buat Kamu ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- MUSIK -->
+    <audio id="backgroundMusic" src="musik.mp3" loop></audio>
+
+
+    <!-- HALAMAN PASSWORD -->
+    <div id="password-page">
+        <h2>🔐 Masukkan Password</h2>
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Masukkan password"
+        >
+
+        <button onclick="checkPassword()">MASUK</button>
+
+        <p id="error"></p>
+    </div>
+
+
+    <!-- HALAMAN LOVE BERDETAK -->
+    <div id="love-page" style="display: none;">
+
+        <div class="heart">❤️</div>
+
+        <button class="click-text" onclick="startLoading()">
+            ꧁ AYO KLIK INI ꧂
+        </button>
+
+    </div>
+
+
+    <!-- HALAMAN LOVE BERPUTAR -->
+    <div id="loading-page" style="display: none;">
+
+        <div class="heart loading">❤️</div>
+
+        <div class="all-in-message">
+            sebentarr yaa
+        </div>
+
+    </div>
+
+
+    <!-- HALAMAN ULANG TAHUN -->
+    <div id="birthday-page" style="display: none;">
+
+        <h1 class="birthday-title">
+            ✨ ♡ 𝑯𝑨𝑷𝑷𝒀 𝑩𝑰𝑹𝑻𝑯𝑫𝑨𝒀 𝑪𝑨𝑵𝑻𝑰𝑲 ♡ ✨
+        </h1>
+
+        <div class="photo-box">
+            <img src="foto.jpg" alt="Foto">
+        </div>
+
+        <p class="photo-caption heartbeat-name">
+            🩷𝒁𝒂𝒉𝒓𝒂 𝑴𝒊𝒌𝒂𝒊𝒍𝒂🩷
+        </p>
+
+        <p class="birthday-message">
+            𝑺𝒆𝒎𝒐𝒈𝒂 𝒔𝒆𝒎𝒖𝒂 𝒊𝒎𝒑𝒊𝒂𝒏 𝒌𝒂𝒎𝒖 𝒕𝒆𝒓𝒘𝒖𝒋𝒖𝒅 💕
+        </p>
+
+        <p>✨ 🎈 ✨</p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

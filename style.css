@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffe6ec;
+    font-family: Arial, sans-serif;
+}
+
+
+/* HALAMAN */
+
+#password-page,
+#love-page,
+#loading-page,
+#birthday-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* PASSWORD */
+
+#password-page h2 {
+    margin-bottom: 15px;
+}
+
+#password {
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#password-page button {
+    margin-top: 12px;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* LOVE */
+
+.heart {
+    font-size: 100px;
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+}
+
+
+/* AYO KLIK INI */
+
+.click-text {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+
+/* LOVE BERPUTAR */
+
+.loading {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* PESAN LOADING */
+
+.all-in-message {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    animation: messageBeat 1s infinite;
+}
+
+@keyframes messageBeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+
+/* HALAMAN ULANG TAHUN */
+
+.birthday-title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: titleAppear 1.5s ease;
+}
+
+@keyframes titleAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* FOTO */
+
+.photo-box {
+    width: 280px;
+    height: 350px;
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* NAMA */
+
+.photo-caption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: -10px 0 15px;
+}
+
+.heartbeat-name {
+    animation: nameBeat 1s infinite;
+}
+
+@keyframes nameBeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+
+}
+
+
+/* PESAN */
+
+.birthday-message {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}

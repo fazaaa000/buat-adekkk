@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selamat Ulang Tahun ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="backgroundMusic" loop>
+        <source src="musik.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1 class="birthday-title">
+        ✨ ♡ 𝑯𝑨𝑷𝑷𝒀 𝑩𝑰𝑹𝑻𝑯𝑫𝑨𝒀 𝑪𝑨𝑵𝑻𝑰𝑲 ♡ ✨
+    </h1>
+
+    <div class="photo-box">
+        <img src="foto.jpg" alt="Foto">
+    </div>
+
+    <p class="photo-caption heartbeat-name">
+        🩷𝒁𝒂𝒉𝒓𝒂 𝑴𝒊𝒌𝒂𝒊𝒍𝒂🩷
+    </p>
+
+    <p class="birthday-message">
+        𝑺𝒆𝒎𝒐𝒈𝒂 𝒔𝒆𝒎𝒖𝒂 𝒊𝒎𝒑𝒊𝒂𝒏 𝒌𝒂𝒎𝒖 𝒕𝒆𝒓𝒘𝒖𝒋𝒖𝒅 💕
+    </p>
+
+    <p>✨ 🎈 ✨</p>
+
+
+    <script>
+        const music = document.getElementById("backgroundMusic");
+
+        if (sessionStorage.getItem("musicStarted") === "yes") {
+            music.play();
+        }
+    </script>
+
+</body>
+</html>
